@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Article</th>
+        <th>Prix</th>
+        <th>Quantité</th>
+        <th>Description</th>
+        <th>Supp</th>
+    </tr>
+    <tr *ngFor="let article of articles">
+        <td>{{article.id}}</td>
+        <td>{{article.name}}</td>
+        <td>{{article.price}}</td>
+        <td>{{article.quantity}}</td>
+        <td>{{article.description}}</td>
+        <td><button routerLink="article/{{ article.id }}">Infos</button></td>
+    </tr>
+</table>
