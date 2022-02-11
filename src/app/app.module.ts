@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { ListArticleComponent } from './list-article/list-article.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PersonComponent } from './exo/person/person.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticleComponent,
-    ListArticleComponent
+    ListArticleComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule,
